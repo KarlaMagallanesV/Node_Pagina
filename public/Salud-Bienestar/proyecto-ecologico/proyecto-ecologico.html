@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Proyectos Ecológicos - ODS 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos base */
+        body {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout */
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 3rem 2rem;
+        }
+
+        /* Encabezado */
+        .eco-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border-radius: 20px;
+            margin-bottom: 4rem;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .eco-header h1 {
+            color: #69D0A3;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .eco-icon {
+            color: #69D0A3;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Grid de proyectos */
+        .project-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        /* Tarjetas de proyecto */
+        .project-card {
+            background: #2d2d2d;
+            border: 1px solid rgba(105, 208, 163, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            border-radius: 10px;
+            height: 200px;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .project-card h3 {
+            color: #69D0A3;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        /* Botón regresar */
+        .btn-regresar {
+            align-items: center;
+            background: #69D0A3;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(105, 208, 163, 0.2);
+            color: #1a1a1a;
+            display: flex;
+            font-weight: bold;
+            gap: 8px;
+            left: 20px;
+            padding: 10px 20px;
+            position: fixed;
+            text-decoration: none;
+            top: 10px;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .btn-regresar:hover {
+            background: #4CAF50;
+            box-shadow: 0 6px 15px rgba(105, 208, 163, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-regresar i {
+            font-size: 16px;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .eco-header h1 {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="/Salud-Bienestar/html/recursosods.html" class="btn-regresar">
+        <i class="fas fa-arrow-left"></i> Regresar
+    </a>
+    <div class="container">
+        <div class="eco-header">
+            <i class="fas fa-leaf eco-icon"></i>
+            <h1>Guía de Proyectos Ecológicos</h1>
+            <p>Contribuyendo a la salud y bienestar de nuestro planeta</p>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09" alt="Huerto Urbano">
+                <h3><i class="fas fa-seedling"></i> Huerto Urbano</h3>
+                <p>Aprende a crear tu propio huerto en casa. Cultiva alimentos orgánicos y contribuye a la seguridad alimentaria.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b" alt="Reciclaje Creativo">
+                <h3><i class="fas fa-recycle"></i> Reciclaje Creativo</h3>
+                <p>Transforma residuos en objetos útiles y artísticos. Reduce la huella de carbono mientras desarrollas tu creatividad.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3" alt="Energía Solar">
+                <h3><i class="fas fa-solar-panel"></i> Energía Solar</h3>
+                <p>Implementa sistemas de energía solar en tu hogar. Guía paso a paso para una transición hacia energía limpia.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34" alt="Compostaje">
+                <h3><i class="fas fa-apple-alt"></i> Compostaje</h3>
+                <p>Aprende a crear compost natural con residuos orgánicos. Mejora la calidad de tu jardín de manera sostenible.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://urbangreen.store/wp-content/uploads/2023/06/jardin-con-mariposas.jpg" alt="Jardín de Mariposas">
+                <h3><i class="fas fa-bug"></i> Jardín de Mariposas</h3>
+                <p>Crea un espacio para la biodiversidad. Atrae polinizadores y contribuye al equilibrio ecológico.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51" alt="Ahorro de Agua">
+                <h3><i class="fas fa-tint"></i> Ahorro de Agua</h3>
+                <p>Implementa sistemas de recolección de agua lluvia y técnicas de ahorro. Conserva este recurso vital.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

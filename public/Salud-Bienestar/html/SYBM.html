@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salud-Bienestar</title>
+    <meta name="title" content="salud-Bienestar">
+    <meta name="description" content="">
+    <!-- Preconexión para optimizar carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome y Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Hoja de estilo genérica -->
+    <link rel="stylesheet" href="/Salud-Bienestar/css/ods.css">
+
+    <!-- Librerías de animación, carrusel y calendario -->
+    <link href="/Salud-Bienestar/SYBM/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/Salud-Bienestar/SYBM/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/Salud-Bienestar/SYBM/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+
+    <!-- Hoja de estilos personalizada de SYBM (IMPORTANTE) -->
+    <link href="/Salud-Bienestar/SYBM/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+    -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Salud y Bienestar</p>
+    </div>
+
+
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    Ods 3 salud y bienestar los objetivos
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Te brindamos todas las informacione</span>
+            </div>
+
+            <a href="tel:+11234567890" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">+51 987654321</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="saludybienestar@ods.pe" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">saludybienestar@ods.pe</span>
+            </a>
+
+        </div>
+    </div>
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="/Salud-Bienestar/image/Logo.png" width="50" height="50" alt="ods">
+            </a>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="" width="160" height="50" alt="ods3">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/principalods.html" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">INICIO</span>
+                        </a>
+                        </l>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Sobre Nosotros</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/SYBM.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">SYBM</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/galeriaods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Galeria</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/recursosods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Recursos</span>
+                        </a>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/contactoods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">CONTACTO</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Dashboard.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">SALIR</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+                <li data-target="#header-carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="min-height: 100vh;">
+                    <video class="position-absolute w-100 h-100" style="object-fit: cover;" autoplay muted loop>
+                        <source src="/Salud-Bienestar/SYBM/img/carousel-1.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;">SYBM</h6>
+                            <h3 class="display-3 text-capitalize text-white mb-3">"Cuidarte a ti misma no es un lujo, es
+                                una necesidad."💕</h3>
+                            <p class="mx-md-5 px-5">Tu bienestar es una prioridad, porque cuando te cuidas, puedes
+                                brillar con todo tu potencial.</p>
+                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                                href="#boton-1">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="min-height: 100vh;">
+                    <video class="position-absolute w-100 h-100" style="object-fit: cover;" autoplay muted loop>
+                        <source src="/Salud-Bienestar/SYBM/img/carousel-2.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;"> SYBM</h6>
+                            <h3 class="display-3 text-capitalize text-white mb-3"> "La espera más dulce de todas."</h3>
+                            <p class="mx-md-5 px-5">Tu cuerpo está creando vida, ¡merece todo el amor y el cuidado!
+                                Prueba masajes prenatales, rutinas de cuidado de la piel y ejercicios suaves como yoga o
+                                caminatas.</p>
+                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                                href="#boton-2">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="min-height: 100vh;">
+                    <video class="position-absolute w-100 h-100" style="object-fit: cover;" autoplay muted loop>
+                        <source src="/Salud-Bienestar/SYBM/img/carousel-3.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;">SYBM</h6>
+                            <h3 class="display-3 text-capitalize text-white mb-3">"Un bebé es la más hermosa creación de
+                                la naturaleza."</h3>
+                            <p class="mx-md-5 px-5"> El cuidado de tu recién nacido es una de las experiencias más
+                                hermosas y responsables que vivirás. Cada pequeño gesto es una muestra de amor que lo
+                                acompañará en su primer viaje por la vida.</p>
+                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                                href="#cuidados">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="min-height: 100vh;">
+                    <video class="position-absolute w-100 h-100" style="object-fit: cover;" autoplay muted loop>
+                        <source src="/Salud-Bienestar/SYBM/img/carousel-4.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;"> SYBM</h6>
+                            <h3 class="display-3 text-capitalize text-white mb-3">"Dos corazones latiendo en un solo
+                                cuerpo."</h3>
+                            <p class="mx-md-5 px-5">El embarazo es un viaje mágico lleno de amor y transformación. En
+                                cada etapa, tu bienestar es clave para el desarrollo de esa pequeña vida que crece
+                                dentro de ti.</p>
+                            <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
+                                href="#boton-4">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid px-0 py-5 my-5">
+        <div class="row mx-0 justify-content-center text-center">
+            <div class="col-lg-6">
+                <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">TOP 7</h6>
+                <h1>Mujeres Visionarias</h1>
+            </div>
+        </div>
+        <div class="owl-carousel service-carousel">
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="/Salud-Bienestar/SYBM/img/mariana-costa.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3"> Mariana Costa Checa </h4>
+                    <p class="text-white px-3 mb-3"> Fundadora de Laboratoria, proyecto que enseña programación a
+                        mujeres con pocos recursos.</p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary" href="https://iniciativaidea.org/ponente/mariana-costa-checa/"
+                            target="_blank">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="/Salud-Bienestar/SYBM/img/Malala_Yousafzai.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3"> Malala Yousafzai </h4>
+                    <p class="text-white px-3 mb-3">Su lucha para que las niñas y mujeres paquistaníes puedan acceder a
+                        educación en igualdad de condiciones que los hombres ha puesto en peligro su vida.</p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary" href="https://malala.org/malalas-story" target="_blank"> Conoce
+                            más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="/Salud-Bienestar/SYBM/img/Raquel Vasquez.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3"> Raquel Vasquez </h4>
+                    <p class="text-white px-3 mb-3">Lucha para acabar con la desigualdad de género en el medio rural,
+                        dándole visibilidad al trabajo de las mujeres, facilitando el acceso a la propiedad de la tierra
+                        que cultivan. </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://www.editorialrenacimiento.com/autores/1143__vazquez-raquel" target="_blank">
+                            Conoce más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="/Salud-Bienestar/SYBM/img/Reshma Saujani.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Reshma Saujani</h4>
+                    <p class="text-white px-3 mb-3"> Fundadora de Girls Who Code y Moms First, dedicada a cerrar la
+                        brecha de género en tecnología y apoyar a madres trabajadoras.</p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary" href="https://reshmasaujani.com/" target="_blank">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="/Salud-Bienestar/SYBM/img/Gertrude Belle.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3"> Gertrude Belle</h4>
+                    <p class="text-white px-3 mb-3">Entre sus descubrimientos destaca el fármaco AZT para el tratamiento
+                        del SIDA. O el Imuran, que facilita los trasplantes de riñón</p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary" href="https://sebbm.es/mujer-y-ciencia/gertrude-belle-elion/"
+                            target="_blank"> Conoce más </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="/Salud-Bienestar/SYBM/img/Karla Wong.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3"> Karla Wong </h4>
+                    <p class="text-white px-3 mb-3">Lidera la expansión de los servicios en la nube del gigante
+                        tecnológico en el país</p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://forbes.pe/mujeres-poderosas/2024-09-18/las-50-mujeres-mas-poderosas-de-peru-en-2024-karla-wong /"
+                            target="_blank"> Conoce más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100" src="/Salud-Bienestar/SYBM/img/mujer.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">¿Por que es importante
+                        cuidarnos?</h6>
+                    <h1 id="boton-1" class="mb-4">Razones Claves</h1>
+                    <p class="pl-4 border-left border-primary">
+                    <ul>
+                        <li>
+                            <strong>Salud física y prevención de enfermedades:</strong>
+                            <p>El autocuidado incluye hábitos de salud que nos permiten prevenir enfermedades y mantener
+                                una buena salud a lo largo de nuestra vida. Esto puede incluir revisiones médicas
+                                regulares, ejercicio y nutrición adecuada.</p>
+                        </li>
+                        <li>
+                            <strong>Bienestar emocional y mental:</strong>
+                            <p>El cuidado emocional es fundamental para la salud integral. Practicar técnicas como la
+                                meditación y el yoga, así como buscar apoyo emocional, ayuda a reducir el estrés y
+                                mantener el equilibrio emocional.</p>
+                        </li>
+                        <li>
+                            <strong>Empoderamiento y autoestima:</strong>
+                            <p>El autocuidado mejora la confianza y la autoestima. Sentirnos bien con nosotras mismas,
+                                tanto física como emocionalmente, es clave para el empoderamiento personal. También es
+                                un ejemplo positivo para las generaciones más jóvenes.</p>
+                        </li>
+                        <li>
+                            <strong>Equilibrio entre roles personales y profesionales:</strong>
+                            <p>Las mujeres suelen tener muchas responsabilidades. Cuidarnos ayuda a manejar mejor estas
+                                responsabilidades sin sacrificar nuestra salud, previniendo el agotamiento y aumentando
+                                la productividad.</p>
+                        </li>
+                        <li>
+                            <strong>Autocuidado como acto de amor propio:</strong>
+                            <p>Cuidarnos es un acto de respeto hacia nosotras mismas. Es fundamental para mantener
+                                nuestra salud y bienestar, además de recordarnos que merecemos estar bien.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Open Hours Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="/Salud-Bienestar/SYBM/img/embarazo.jpg"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
+                        <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">EL EMBARAZO</h6>
+                        <h1 id="boton-2" class="mb-4">¿Que Busca el ODS 03?</h1>
+                        <p>Una de las metas principales del ODS 3 es reducir la tasa mundial de mortalidad materna a
+                            menos de 70 por cada 100,000 nacidos vivos. Esto implica garantizar acceso a servicios de
+                            salud reproductiva, prenatal y postnatal, especialmente en áreas rurales y desfavorecidas.
+                        </p>
+                        <h5><strong>🌸 ¿Cómo reducir la mortalidad materna? 🌸</strong></h5>
+                        <br>
+                        <ul>
+                            <li>🏥 <strong>Mejorar el acceso a servicios de salud:</strong> Atención prenatal, postnatal
+                                y partos asistidos por personal capacitado.</li>
+                            <br>
+                            <li>📚 <strong>Educación y concienciación:</strong> Promover la salud sexual y reproductiva,
+                                y capacitar a profesionales de la salud.</li>
+                            <br>
+                            <li>💊 <strong>Acceso a planificación familiar:</strong> Facilitar métodos anticonceptivos y
+                                fomentar el espaciamiento de embarazos.</li>
+                            <br>
+                            <li>🚑 <strong>Atención a emergencias obstétricas:</strong> Implementar transporte de
+                                emergencia y entrenar en la gestión de complicaciones.</li>
+                            <br>
+                            <li>📜 <strong>Políticas públicas:</strong> Invertir en salud materna y reducir
+                                desigualdades socioeconómicas.</li>
+                            <br>
+                            <li>💖 <strong>Apoyo emocional y mental:</strong> Brindar apoyo psicológico y crear redes
+                                comunitarias para mujeres embarazadas.</li>
+                            <br>
+                            <li>🚫 <strong>Prevención de violencia de género:</strong> Identificar y apoyar a mujeres en
+                                situación de riesgo.</li>
+                        </ul>
+                        <a href="https://www.unwomen.org/es/news/in-focus/women-and-the-sdgs/sdg-3-good-health-well-being"
+                            target="_blank" class="btn btn-primary mt-2">Más Info</a>
+                        <br>
+                        <br>
+                        <h2>Taza de Mortalidad Materna</h2>
+                        </p>
+                        <div class="row pt-3">
+                            <div class="col-6">
+                                <div class="bg-light text-center p-4">
+                                    <h3 class="display-4 text-primary" data-toggle="counter-up">287.000</h3>
+                                    <h6 class="text-uppercase">Mujeres por Año</h6>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-light text-center p-4">
+                                    <h3 class="display-4 text-primary" data-toggle="counter-up">2300000</h3>
+                                    <h6 class="text-uppercase">Recien Nacidos por Año</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Open Hours End -->
+
+
+    <!-- Pricing Start -->
+
+    <div class="container-fluid bg-pricing" style="margin: 90px 0;">
+        <div class="container">
+            <div>
+                <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">ATENCIÓN</h6>
+                <br>
+                <h1 id="cuidados">Cuidados importantes durante el embarazo💡</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="/Salud-Bienestar/SYBM/img/chica-embarazada.jpeg"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7 pt-5 pb-lg-5">
+                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
+                        <div class="owl-carousel pricing-carousel">
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h4 class="text-primary text-uppercase m-0">🍎Mantén una dieta equilibrada:</h4>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Nutrientes
+                                            esenciales:</strong> Consume alimentos ricos en ácido fólico, hierro, calcio
+                                        y proteínas.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Frutas y verduras:</strong>
+                                        Aseguran la ingesta de vitaminas y fibra.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Hidratación:</strong> Bebe
+                                        mucha agua para evitar la deshidratación.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Evita alimentos crudos o
+                                            poco cocidos:</strong> Pueden contener bacterias peligrosas.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Proteinas de alta
+                                            Calidad:</strong>Necesarias para el crecimiento del bebé y la formación de
+                                        tejidos.</p>
+                                    <center><a href="https://www.alimmenta.com/dietas/dieta-para-el-embarazo/"
+                                            target="_blank" class="btn btn-primary my-2">Más info</a></center>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h4 class="text-primary text-uppercase m-0">💊Toma suplementos </h4>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Ácido fólico (Vitamina
+                                            B9):</strong> Previene defectos en el tubo neural.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Hierro:</strong>Previene la
+                                        anemia en la gestante y apoya el desarrollo del bebé.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Calcio:</strong>Fundamental
+                                        para el desarrollo de huesos y dientes del bebé.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Vitamina D:</strong>Ayuda en
+                                        la absorción de calcio y fortalece el sistema inmunológico.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Ácidos grasos omega-3 (DHA y
+                                            EPA):</strong>Contribuyen al desarrollo cerebral y visual del bebé.</p>
+                                    <center><a
+                                            href="https://www.clinicalascondes.cl/CENTROS-Y-ESPECIALIDADES/Especialidades/Departamento-de-Ginecologia-Obstetricia/Maternidad/Noticias/Te-puede-interesar/Durante-la-gestacion-%C2%BFnecesito-tomar-suplementos-"
+                                            target="_blank" class="btn btn-primary my-2">Más Info</a></center>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h4 class="text-primary text-uppercase m-0">🚶‍♀️Realiza actividad física moderada
+                                    </h4>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Ejercicio
+                                            suave:</strong>Caminar, nadar o practicar yoga prenatal.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Evita
+                                            sobreesfuerzos:</strong>No realices actividades que puedan causar caídas o
+                                        lesiones.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Estiramientos
+                                            suaves:</strong>Mejoran la flexibilidad y alivian la tensión muscular.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>Precauciones
+                                            importantes:</strong>Antes de comenzar cualquier rutina, consulta con tu
+                                        médico, especialmente si tienes alguna condición médica.</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i><strong>No te exijas
+                                            demasiado:</strong>Escucha a tu cuerpo. Si sientes mareo, dolor o fatiga,
+                                        detente y descansa.</p>
+                                    <center><a
+                                            href="https://www.unicef.org/uruguay/crianza/embarazo/la-importancia-de-la-actividad-fisica-en-el-embarazo#:~:text=Mantenerse%20activo%20es%20muy%20beneficioso,de%20piernas%20y%20de%20espalda."
+                                            target="_blank" class="btn btn-primary my-2">Más Info</a></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100" src="/Salud-Bienestar/SYBM/img/bebe.jpeg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">Recomendaciones para
+                        Recien Nacidos</h6>
+                    <h1 id="boton-4" class="mb-4">DE MAMIS PARA MAMIS!</h1>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="position-relative">
+                            <i class="fa fa-3x fa-quote-right text-primary position-absolute"
+                                style="top: -6px; right: 0;"></i>
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid rounded-circle" src="/Salud-Bienestar/SYBM/img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;" alt="">
+                                <div class="ml-3">
+                                    <h6 class="text-uppercase"> Mami Pamela</h6>
+                                    <span>Psicologa</span>
+                                </div>
+                            </div>
+                            <p class="m-0">
+                                No tengas miedo de pedir ayuda, ya sea a tu pareja, familiares, amigos o incluso un
+                                profesional.
+                            </p>
+                        </div>
+                        <div class="position-relative">
+                            <i class="fa fa-3x fa-quote-right text-primary position-absolute"
+                                style="top: -6px; right: 0;"></i>
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid rounded-circle" src="/Salud-Bienestar/SYBM/img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;" alt="">
+                                <div class="ml-3">
+                                    <h6 class="text-uppercase">Mami Sofi</h6>
+                                    <span>Ama de Casa</span>
+                                </div>
+                            </div>
+                            <p class="m-0"> <strong>Tiempo personal:</strong> Tómate un momento para ti, incluso si son
+                                10 minutos al día. Leer, meditar o simplemente respirar profundamente puede ayudarte
+                                mucho.
+                            </p>
+                        </div>
+                        <div class="position-relative">
+                            <i class="fa fa-3x fa-quote-right text-primary position-absolute"
+                                style="top: -6px; right: 0;"></i>
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid rounded-circle" src="/Salud-Bienestar/SYBM/img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;" alt="">
+                                <div class="ml-3">
+                                    <h6 class="text-uppercase">Mami Ana</h6>
+                                    <span>Doctora</span>
+                                </div>
+                            </div>
+                            <p class="m-0">
+                                <strong>Descanso:</strong> Aunque parezca difícil, intenta descansar cuando puedas. Una
+                                madre descansada está más preparada para enfrentar los desafíos diarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Parte Ia-->
+    <div id="chat-bubble">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/robot.svg" alt="Chat">
+    </div>
+    <div id="chat-container">
+        <button id="clear-chat">Vaciar Chat</button>
+        <div id="chat-messages">
+            <div class="message bot">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/robot.svg"
+                    alt="Bot" class="avatar">
+                <div class="message-content">
+                    <p>¡Hola! Soy Tu mascota virtual. ¿En qué puedo asistirte hoy?</p>
+                </div>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script type="importmap">
+            {
+                "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+                }
+            }
+        </script>
+
+    <link rel="stylesheet" href="/Salud-Bienestar/js/IA-Chat-GPT/IA.css">
+    <script type="module" src="/Salud-Bienestar/js/IA-Chat-GPT/IA.js"></script>
+
+
+    </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer section has-bg-image text-center"
+        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9kDQC4xvRFRNHoomRsfwRWxrz8nge7gEPuP_bafbBwPyk02oDfvaluQDLP9HrxIc15w&usqp=CAU')">
+        <div class="container">
+
+            <div class="footer-top grid-list">
+
+                <div class="footer-brand has-before has-after">
+
+                    <a href="#" class="logo">
+                        <img src="/Salud-Bienestar/image/Logo.png" width="160" height="50" loading="lazy"
+                            alt="Salud y Bienestar">
+                    </a>
+
+                    <p class="body-4">
+                        ODS 3: Garantizar una vida sana y promover el bienestar para todos en todas las edades.
+                    </p>
+
+                    <div class="wrapper">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                    </div>
+
+                    <p class="title-1">Reciba Noticias Sobre ODS</p>
+
+                    <form action="" class="input-wrapper">
+                        <div class="icon-wrapper">
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                            <input type="email" name="email_address" placeholder="Tu correo electrónico"
+                                autocomplete="off" class="input-field">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">
+                            <span class="text text-1">Suscríbete</span>
+
+                            <span class="text text-2" aria-hidden="true">Suscríbete</span>
+                        </button>
+                    </form>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/principalods.html"
+                            class="label-2 footer-link hover-underline">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/sobreods.html" class="label-2 footer-link hover-underline">Sobre
+                            Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/galeriaods.html"
+                            class="label-2 footer-link hover-underline">Galeria</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/recursosods.html"
+                            class="label-2 footer-link hover-underline">Recursos</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/contactoods.html"
+                            class="label-2 footer-link hover-underline">Contacto</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Tik Tok</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+            </div>
+
+        </div>
+    </footer>
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/Salud-Bienestar/js/ods.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/easing/easing.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/waypoints/waypoints.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/counterup/counterup.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/Salud-Bienestar/SYBM/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/Salud-Bienestar/SYBM/js/main.js"></script>
+
+</body>
+
+</html>

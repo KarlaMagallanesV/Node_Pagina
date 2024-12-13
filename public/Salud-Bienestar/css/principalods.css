@@ -1,0 +1,314 @@
+/* --------------------------------------------------------- */
+/* Estilos para la sección de Definición */
+.definicion-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.definicion-text {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.definicion-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-shadow: 2px 2px 0 #45a049,
+                 4px 4px 0 #3d8b40,
+                 6px 6px 0 #357a38;
+    transform: perspective(500px) rotateX(10deg);
+    margin-bottom: 20px;
+}
+
+.definicion-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.definicion-image {
+    width: 100%;
+    max-width: 550px;
+    margin-top: -20px;
+}
+
+.definicion-img {
+    width: 110%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.definicion-img:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------------------------------------------- */
+/* Estilos para la sección de Historia */
+.historia-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.historia-image {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.historia-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.historia-text {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+}
+
+.historia-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-shadow: 2px 2px 0 #45a049,
+                 4px 4px 0 #3d8b40,
+                 6px 6px 0 #357a38;
+    transform: perspective(500px) rotateX(10deg);
+    margin-bottom: 20px;
+}
+
+.historia-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Estilos para la sección de Importancia */
+.import-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.import-text {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.import-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-shadow: 2px 2px 0 #45a049,
+                 4px 4px 0 #3d8b40,
+                 6px 6px 0 #357a38;
+    transform: perspective(500px) rotateX(10deg);
+    margin-bottom: 20px;
+}
+
+.import-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.import-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+.import-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección de Los 17 ODS */
+.los17ods-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.los17ods-text {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.los17ods-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-shadow: 2px 2px 0 #45a049,
+                 4px 4px 0 #3d8b40,
+                 6px 6px 0 #357a38;
+    transform: perspective(500px) rotateX(10deg);
+    margin-bottom: 20px;
+}
+
+.los17ods-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.los17ods-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+.los17ods-img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/* Estilos para la sección de Desafíos */
+.desafios-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.desafios-image {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.desafios-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.desafios-text {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+}
+
+.desafios-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-shadow: 2px 2px 0 #45a049,
+                 4px 4px 0 #3d8b40,
+                 6px 6px 0 #357a38;
+    transform: perspective(500px) rotateX(10deg);
+    margin-bottom: 20px;;
+}
+
+.desafios-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-toggle-btn ion-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+    .nav-toggle-btn {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+    .definicion-section, .historia-section, .import-section, .los17ods-section, .desafios-section {
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .definicion-text, .historia-text, .import-text, .los17ods-text, .desafios-text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .definicion-text, .import-text, .los17ods-text {
+        padding-right: 20px;
+    }
+
+    .historia-text, .desafios-text {
+        padding-left: 20px;
+    }
+
+    .definicion-image, .historia-image, .import-image, .los17ods-image, .desafios-image {
+        width: 45%;
+    }
+
+    .definicion-text h2, .historia-text h2, .import-text h2, .los17ods-text h2, .desafios-text h2 {
+        font-size: 3rem;
+    }
+
+    .definicion-text p, .historia-text p, .import-text p, .los17ods-text p, .desafios-text p {
+        font-size: 1.5rem;
+    }
+}

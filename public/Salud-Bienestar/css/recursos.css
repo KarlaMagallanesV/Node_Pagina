@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
+
+/* Estilos para la sección Voluntariado ODS 3 */
+.voluntariado-ods-title {
+    font-family: "Salsa", cursive;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    background: linear-gradient(45deg, #69D0A3, #4CAF50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 30px 0 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: titlePulse 2s infinite;
+}
+
+@keyframes titlePulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.voluntariado-ods-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #69D0A3, transparent);
+    border-radius: 2px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* content */
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    top: 14%;
+    left: 3%;
+    width: 90%;
+    max-width: 600px;
+    height: max-content;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 20px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.content h1 {
+    font-family: "Salsa", cursive;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 15px;
+    opacity: 0;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-family: inherit;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    line-height: 1.6;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.swiper-slide-active .content {
+    opacity: 1;
+}
+
+.swiper-slide-active .content h1 {
+    animation: moveDown 0.8s ease-in forwards;
+}
+
+.swiper-slide-active .content p {
+    animation: moveDown 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Imagenes de Fondo */
+
+.background[data-item="one"],
+.background[data-item="two"],
+.background[data-item="three"],
+.background[data-item="four"],
+.background[data-item="five"] {
+    background-size: cover;
+    background-position: center;
+}
+
+.background[data-item="one"] {
+    background-image: url("/salud-Bienestar/images_voluntariado/Lima_Peru.jpg");
+}
+
+.background[data-item="two"] {
+    background-image: url("/salud-Bienestar/images_voluntariado/Corea_Seul.jpg");
+}
+
+.background[data-item="three"] {
+    background-image: url("/salud-Bienestar/images_voluntariado/Sudafrica.jpg");
+}
+
+.background[data-item="four"] {
+    background-image: url("/salud-Bienestar/images_voluntariado/nepal.jpg");
+}
+
+.background[data-item="five"] {
+    background-image: url("/salud-Bienestar/images_voluntariado/Peru_losOlivos.jpg");
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(5%);
+    filter: brightness(85%);
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.animation {
+    animation: resizeClipPath 1.2s ease-in-out forwards;
+}
+
+@keyframes resizeClipPath {
+    0% {
+        clip-path: circle(5%);
+        opacity: 0;
+    }
+
+    100% {
+        clip-path: circle(75%);
+        opacity: 1;
+    }
+}
+
+/* paginacion  */
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #a3a6a3;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+    height: 30px;
+    background-image: linear-gradient(180deg,#73af91 0%, #00689D 100%);
+    border-radius: 15px;
+}
+
+/* menu */
+
+.footer-sec {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    z-index: 2;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature i {
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/*Boton de mas informacion*/
+.btn {
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -5px #27bde2;
+    background-image: linear-gradient(45deg,
+            #66bb6a 0%,
+            #00699d 51%,
+            #66bb6a 100%);
+    background-size: 200% auto;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-position: right center;
+    transform: translateY(-4px);
+}
+
+.btn:active {
+    transform: scale(0.95) translateY(0);
+}
+
+/*-------------------------------- Secciones------------------------------------- */
+/* Estilos para las secciones principales */
+.section-main {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.box-info {
+    flex: 1;
+    padding: 2rem;
+}
+
+.box-info h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #69D0A3, #4CAF50);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.box-info p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.health-image {
+    max-width: 45%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.health-image:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos para secciones de contenido */
+.section-acciones,
+.section-proyectos,
+.section-recursos {
+    padding: 4rem 2rem;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.section-acciones {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.section-proyectos {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+.section-recursos {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.section-acciones h2,
+.section-proyectos h2,
+.section-recursos h2 {
+    color: #69D0A3;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.section-acciones p,
+.section-proyectos p,
+.section-recursos p {
+    color: #e0e0e0;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.section-acciones ul,
+.section-proyectos ul,
+.section-recursos ul {
+    list-style: none;
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-acciones ul li,
+.section-proyectos ul li,
+.section-recursos ul li {
+    background-color: #2d2d2d;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(105, 208, 163, 0.1);
+}
+
+.section-acciones ul li:hover,
+.section-proyectos ul li:hover,
+.section-recursos ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(105, 208, 163, 0.2);
+    border-color: rgba(105, 208, 163, 0.3);
+}
+
+.section-recursos ul li a {
+    color: #69D0A3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.section-recursos ul li a:hover {
+    color: #4CAF50;
+    text-shadow: 0 0 8px rgba(105, 208, 163, 0.3);
+}
+
+
+
+/* Estilos para el botón de menú hamburguesa */
+.nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-toggle-btn ion-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/* Responsive */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    .section-acciones ul,
+    .section-proyectos ul,
+    .section-recursos ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .section-acciones ul,
+    .section-proyectos ul,
+    .section-recursos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    
+    .section-acciones ul,
+    .section-proyectos ul,
+    .section-recursos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .voluntariado-ods-title {
+        font-size: clamp(2.2rem, 4.5vw, 4rem);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    
+    .section-acciones ul,
+    .section-proyectos ul,
+    .section-recursos ul {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .nav-toggle-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .section-acciones ul,
+    .section-proyectos ul,
+    .section-recursos ul {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .section-acciones ul li,
+    .section-proyectos ul li,
+    .section-recursos ul li {
+        margin-bottom: 0.8rem;
+        padding: 1rem;
+    }
+    
+    .voluntariado-ods-title {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        margin: 20px 0 15px;
+    }
+    
+    .nav-toggle-btn {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature {
+        margin-bottom: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .section-acciones ul li, .section-proyectos ul li, .section-recursos ul li {
+        padding: 1rem 0.5rem;
+    }
+    
+    .voluntariado-ods-title {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        top: 10%;
+        left: 5%;
+        width: 90%;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .swiper-pagination-bullet-active {
+        height: 20px;
+    }
+    
+    .section-main h1, .section-proyectos h2, .section-recursos h2 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+    
+    .content h1 {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+    }
+    
+    .content p, .section-recursos p {
+        font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+    }
+    
+    .feature i {
+        font-size: 1.2rem;
+    }
+    
+    .feature p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .voluntariado-ods-title {
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}

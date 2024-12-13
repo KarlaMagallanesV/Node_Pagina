@@ -1,0 +1,62 @@
+.rs-ods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-disco {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(1);
+}
+
+.img-disco:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    animation: glowing 1s infinite alternate;
+}
+
+/* Efecto de luz de discoteca */
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 0, 0.5),
+                    0 0 10px rgba(255, 255, 0, 0.5),
+                    0 0 15px rgba(255, 255, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 0, 1),
+                    0 0 30px rgba(255, 255, 0, 1),
+                    0 0 40px rgba(255, 255, 0, 1);
+    }
+}
+
+/* Efecto de fondo */
+.rs-ods::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+    filter: blur(20px);
+    animation: pulsate 2s infinite alternate;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

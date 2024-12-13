@@ -1,0 +1,143 @@
+CREATE DATABASE  dbGeneral;
+USE dbGeneral;
+
+CREATE TABLE  contactos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombres VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    tipoDocumento VARCHAR(3) NOT NULL,
+    numeroDocumento VARCHAR(15) NOT NULL,
+    genero VARCHAR(10) NOT NULL,
+    edad INT NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    gmail VARCHAR(50) NOT NULL,
+    direccion VARCHAR(90) NOT NULL,
+    mensaje TEXT NOT NULL
+);
+
+INSERT INTO contactos (nombres, apellidos, tipoDocumento, numeroDocumento, genero, edad, telefono, gmail, direccion, mensaje) VALUES
+('Juan', 'Pérez', 'DNI', '12345678', 'Masculino', 30, '987654321', 'juan.perez@gmail.com', 'Calle Falsa 123', 'Este es un mensaje de prueba.'),
+('María', 'Gómez', 'DNI', '87654321', 'Femenino', 25, '123456789', 'maria.gomez@gmail.com', 'Avenida Siempre Viva 742', 'Este es otro mensaje de prueba.'),
+('Carlos', 'López', 'CE', '12345678901234567890', 'Masculino', 40, '456789123', 'carlos.lopez@gmail.com', 'Boulevard de los Sueños Rotos', 'Mensaje de ejemplo para Carlos.'),
+('Ana', 'Martínez', 'DNI', '23456789', 'Femenino', 22, '321654987', 'ana.martinez@gmail.com', 'Calle de la Amargura 456', 'Mensaje de ejemplo para Ana.'),
+('Luis', 'Hernández', 'CE', '98765432109876543210', 'Masculino', 35, '654321789', 'luis.hernandez@gmail.com', 'Plaza de la Libertad', 'Mensaje de ejemplo para Luis.'),
+('Roberto', 'Silva', 'DNI', '45678912', 'Masculino', 28, '789123456', 'roberto.silva@gmail.com', 'Avenida Principal 789', 'Mensaje de Roberto'),
+('Carmen', 'Torres', 'DNI', '78912345', 'Femenino', 33, '456123789', 'carmen.torres@gmail.com', 'Calle Los Pinos 234', 'Mensaje de Carmen'),
+('Diego', 'Flores', 'CE', '32165498732165498', 'Masculino', 45, '987321654', 'diego.flores@gmail.com', 'Jiron Lima 567', 'Mensaje de Diego'),
+('Patricia', 'Ruiz', 'DNI', '65432198', 'Femenino', 29, '654987321', 'patricia.ruiz@gmail.com', 'Avenida Central 890', 'Mensaje de Patricia'),
+('Miguel', 'Castro', 'DNI', '89123456', 'Masculino', 38, '321789456', 'miguel.castro@gmail.com', 'Calle Las Flores 123', 'Mensaje de Miguel');
+
+-- OP CRUD
+
+-- Crear
+INSERT INTO contactos (nombres, apellidos, tipoDocumento, numeroDocumento, genero, edad, telefono, gmail, direccion, mensaje) VALUES
+('Pedro', 'Ramírez', 'DNI', '11223344', 'Masculino', 28, '987654321', 'pedro.ramirez@gmail.com', 'Calle Nueva 789', 'Mensaje de Pedro.');
+
+-- Leer 
+SELECT * FROM contactos;
+
+-- Actualizar
+UPDATE contactos 
+SET telefono = '123123123' 
+WHERE id = 1;
+
+-- Eliminar
+DELETE FROM contactos 
+WHERE id = 2;
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- /* SCRIPT FECHA */
+
+CREATE TABLE eventos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    fecha DATE NOT NULL,
+    imagen VARCHAR(255) NOT NULL
+);
+INSERT INTO eventos (titulo, descripcion, fecha, imagen) VALUES
+('Exposición de Fotografía', 'Muestra de fotografía contemporánea', CURRENT_DATE, 'expo_foto.jpg'),
+('Maratón Benéfica', 'Carrera solidaria por la ciudad', CURRENT_DATE, 'maraton.jpg'),
+('Feria del Libro', 'Encuentro literario anual', CURRENT_DATE, 'feria_libro.jpg'),
+('Festival de Jazz', 'Conciertos de jazz en vivo', CURRENT_DATE, 'jazz_fest.jpg'),
+('Taller de Pintura', 'Clase magistral de técnicas pictóricas', CURRENT_DATE, 'taller_pintura.jpg'),
+('Desfile de Moda', 'Presentación de colección primavera', CURRENT_DATE, 'desfile.jpg'),
+('Conferencia Científica', 'Avances en investigación médica', CURRENT_DATE, 'conferencia.jpg'),
+('Festival de Teatro', 'Obras clásicas y contemporáneas', CURRENT_DATE, 'teatro.jpg'),
+('Feria Artesanal', 'Exposición de artesanías locales', CURRENT_DATE, 'artesania.jpg'),
+('Torneo de Ajedrez', 'Competencia internacional de ajedrez', CURRENT_DATE, 'ajedrez.jpg');
+
+-- OP CRUD EVENTOS
+
+INSERT INTO eventos (titulo, descripcion, fecha, imagen) VALUES
+('Cumpleaños de Juan', 'Celebración del cumpleaños de Juan.', CURRENT_DATE, 'imagen1.jpg'),
+('Reunión de trabajo', 'Reunión para discutir el proyecto.', CURRENT_DATE, 'imagen2.jpg'),
+('Concierto de música', 'Concierto de la banda local.', CURRENT_DATE, 'imagen3.jpg'),
+('Taller de cocina', 'Taller de cocina italiana.', CURRENT_DATE, 'imagen4.jpg'),
+('Exposición de arte', 'Exposición de arte contemporáneo.', CURRENT_DATE, 'imagen5.jpg'),
+('Festival de Cine', 'Festival internacional de cine.', CURRENT_DATE, 'imagen6.jpg'),
+('Feria Gastronómica', 'Degustación de platos típicos.', CURRENT_DATE, 'imagen7.jpg'),
+('Conferencia Tech', 'Conferencia sobre nuevas tecnologías.', CURRENT_DATE, 'imagen8.jpg'),
+('Evento Deportivo', 'Campeonato de fútbol local.', CURRENT_DATE, 'imagen9.jpg'),
+('Show de Comedia', 'Noche de stand-up comedy.', CURRENT_DATE, 'imagen10.jpg');
+
+-- Leer 
+SELECT * FROM eventos;
+
+-- Actualizar
+UPDATE eventos SET descripcion = 'Celebración del cumpleaños de Juan con amigos.' WHERE id = 1;
+
+-- Crear 
+INSERT INTO eventos (titulo, descripcion, fecha, imagen) VALUES
+('Fiesta de Año Nuevo', 'Celebración de la llegada del nuevo año.', CURRENT_DATE, 'imagen_fiesta.jpg');
+
+-- Eliminar 
+DELETE FROM eventos WHERE id = 2;
+
+SELECT * FROM contactos;
+SELECT * FROM eventos;
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- /* SCRIPT RESERVA */
+CREATE TABLE reservas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    personas INT NOT NULL,
+    fecha DATE NOT NULL,
+    hora TIME NOT NULL,
+    mensaje TEXT
+);
+
+INSERT INTO reservas (nombre, telefono, personas, fecha, hora, mensaje) VALUES
+('Juan Pérez', '+51-987-654-321', 2, '2023-10-15', '19:00:00', 'Reservar mesa cerca de la ventana.'),
+('María López', '+51-987-654-322', 4, '2023-10-16', '20:00:00', 'Celebración de cumpleaños.'),
+('Carlos García', '+51-987-654-323', 1, '2023-10-17', '18:00:00', 'Mesa para una persona.'),
+('Ana Torres', '+51-987-654-324', 3, '2023-10-18', '21:00:00', 'Mesa para tres, preferiblemente en el exterior.'),
+('Luis Martínez', '+51-987-654-325', 5, '2023-10-19', '20:30:00', 'Reservar para una reunión de trabajo.'),
+('Sofia Ramirez', '+51-987-654-326', 6, '2023-10-20', '19:30:00', 'Celebración de aniversario.'),
+('Pedro Vargas', '+51-987-654-327', 2, '2023-10-21', '20:00:00', 'Cena romántica.'),
+('Carmen Díaz', '+51-987-654-328', 8, '2023-10-22', '18:30:00', 'Reunión familiar.'),
+('Roberto Sánchez', '+51-987-654-329', 4, '2023-10-23', '21:30:00', 'Cena de negocios.'),
+('Laura Mendoza', '+51-987-654-330', 3, '2023-10-24', '19:00:00', 'Mesa tranquila para trabajo.');
+
+-- OP CRUD Reserva
+-- Crear 
+INSERT INTO reservas (nombre, telefono, personas, fecha, hora, mensaje) 
+VALUES ('Nuevo Cliente', '+51-987-654-326', 2, '2023-10-20', '19:30:00', 'Reservar mesa para dos.');
+
+-- Leer 
+SELECT * FROM reservas;
+
+-- Actualizar 
+UPDATE reservas 
+SET mensaje = 'Cambio de hora a las 20:00'
+ WHERE id = 1;
+
+-- Eliminar
+DELETE FROM reservas 
+WHERE id = 5;

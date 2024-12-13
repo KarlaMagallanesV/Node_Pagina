@@ -1,0 +1,390 @@
+/* Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #4CAF50;
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+    background: #f5f5f5;
+}
+
+body.neon-mode {
+    background: #000;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 50px;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://img.freepik.com/fotos-premium/pagina-calendario-cerca-sobre-fondo-azul-concepto-reunion-cita-planificacion-empresarial_293060-4508.jpg?w=360');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin: 0;
+    animation: bounceIn 1.5s ease;
+    font-family: 'Playfair Display', serif;
+    color: #FF1493;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5),
+                 4px 4px 8px rgba(0,0,0,0.3),
+                 6px 6px 12px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+/* Form Section */
+.form-section {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6e6fa 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 139, 0.15);
+    border: 2px solid #4169e1;
+}
+
+.form-container input {
+    width: 90%;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: 2px solid #000080;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #4a4a4a;
+    transition: all 0.4s ease;
+}
+
+.form-container input:focus {
+    border-color: #0000cd;
+    box-shadow: 0 0 15px rgba(0, 0, 205, 0.2);
+    background: #ffffff;
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.form-container input::placeholder {
+    color: #4682b4;
+}
+
+/* File Input */
+.form-container input[type="file"] {
+    padding: 8px;
+    background: #F0F8FF;
+    border: 2px dashed #87CEEB;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Playfair Display', serif;
+    color: #4a4a4a;
+}
+
+.form-container input[type="file"]:hover {
+    background: #E6E6FA;
+    border-color: #B0E0E6;
+}
+
+.form-container input[type="file"]::-webkit-file-upload-button {
+    background: linear-gradient(45deg, #87CEEB, #B0C4DE);
+    color: #4a4a4a;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.form-container input[type="file"]::-webkit-file-upload-button:hover {
+    background: linear-gradient(45deg, #B0C4DE, #87CEEB);
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.form-container button {
+    background: linear-gradient(45deg, #000080, #0000cd);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 139, 0.3);
+}
+
+.form-container button:hover {
+    background: linear-gradient(45deg, #0000cd, #000080);
+    box-shadow: 0 4px 15px rgba(0, 0, 205, 0.3);
+}
+
+/* Events Section */
+.events-section {
+    padding: 4rem 2rem;
+    background: black; 
+}
+
+#eventos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.event-card {
+    background: rgb(31, 30, 30); 
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.event-card h3 {
+    color: #e74c3c; /* Título en rojo */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.event-card p {
+    color: #ecf0f1; /* Texto en blanco claro */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.event-card .fecha {
+    font-weight: bold;
+    color: #f1c40f; /* Fecha en amarillo */
+}
+
+.event-card .descripcion {
+    flex-grow: 1;
+    color: #3498db; /* Descripción en azul */
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    padding: 0.1rem;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a.youtube:hover { color: #FF0000; }
+.social-icons a.instagram:hover { color: #E1306C; }
+.social-icons a.tiktok:hover { color: #69C9D0; }
+
+.ods-info {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.ods-info h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.ods-info p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Neon Mode */
+body.neon-mode .navbar {
+    background: #000;
+    box-shadow: 0 0 10px #0ff;
+}
+
+body.neon-mode .nav-links a {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+body.neon-mode .form-container {
+    box-shadow: 0 0 20px #0ff;
+    background: #000;
+    color: #0ff;
+}
+
+body.neon-mode input,
+body.neon-mode textarea {
+    background: #111;
+    color: #0ff;
+    border: 1px solid #0ff;
+}
+
+body.neon-mode input:focus,
+body.neon-mode textarea:focus {
+    box-shadow: 0 0 5px #0ff;
+}
+
+body.neon-mode input[type="file"] {
+    background: #111;
+    border: 2px dashed #0ff;
+    color: #0ff;
+}
+
+body.neon-mode input[type="file"]:hover {
+    background: #222;
+    border-color: #0ff;
+}
+
+body.neon-mode input[type="file"]::-webkit-file-upload-button {
+    background: linear-gradient(45deg, #0ff, #00f);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-shadow: 0 0 5px #0ff;
+    box-shadow: 0 0 10px #0ff;
+}
+
+body.neon-mode input[type="file"]::-webkit-file-upload-button:hover {
+    background: linear-gradient(45deg, #00f, #0ff);
+    transform: scale(1.05);
+}
+
+body.neon-mode .ods-info {
+    background: #000;
+    box-shadow: 0 0 20px #0ff;
+    color: #0ff;
+}
+
+body.neon-mode .ods-info h3 {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+body.neon-mode .ods-info p {
+    color: #0ff;
+    text-shadow: 0 0 3px #0ff;
+}
+
+/* Responsive */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

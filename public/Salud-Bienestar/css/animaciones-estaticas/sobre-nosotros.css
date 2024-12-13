@@ -1,0 +1,64 @@
+/* Colores predeterminados en modo claro */
+:root {
+    --color-bg: #ffffff; 
+    --color-text: #000000; 
+    --color-section-bg: #f0f0f0; 
+    --color-primary: #4CAF50; 
+    --color-shadow: rgba(0, 0, 0, 0.1); 
+}
+
+/* Colores para el modo oscuro */
+body.dark-mode-variables {
+    --color-bg: #121212; 
+    --color-text: #ffffff;
+    --color-section-bg: #1e1e1e; 
+    --color-shadow: rgba(255, 255, 255, 0.1);
+}
+
+/* Aplicación de los colores a los elementos */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.navbar {
+    background-color: var(--color-bg);
+    box-shadow: 0 2px 10px var(--color-shadow);
+    color: var(--color-text);
+}
+
+.logo, .nav-link.active {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.nav-link {
+    color: var(--color-text);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.banner-text {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Aseguramos que los párrafos sean visibles */
+p {
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* Si deseas un color específico en modo oscuro */
+body.dark-mode-variables p {
+    color: #ffffff; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}

@@ -1,0 +1,597 @@
+/* Estilos para la sección del equipo */
+.equipo-seccion {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c, #3a3a3a);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.equipo-seccion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+.equipo-titulo {
+    font-size: 4.5rem;
+    font-family: 'Salsa', cursive;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+    animation: neonPulse 2s infinite alternate;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes neonPulse {
+    from { text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.5), 0 0 30px rgba(255,255,255,0.5); }
+    to { text-shadow: 0 0 5px rgba(255,255,255,0.5), 0 0 10px rgba(255,255,255,0.5), 0 0 15px rgba(255,255,255,0.5); }
+}
+
+.equipo-subtitulo {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    color: #a0a0a0;
+    position: relative;
+    z-index: 2;
+}
+
+.equipo-descripcion {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2;
+    color: #d0d0d0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para los miembros del equipo */
+.equipo-miembros {
+    padding: 6rem 2rem;
+    background: #1a1a1a;
+    position: relative;
+}
+
+.equipo-miembros::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #1a1a1a, transparent);
+    pointer-events: none;
+}
+
+.equipo-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.miembro-equipo {
+    flex: 0 1 380px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.miembro-equipo:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.miembro-equipo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.miembro-equipo:hover::before {
+    top: -75%;
+    left: -75%;
+}
+
+.imagen-perfil {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    display: block;
+    border: 5px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.imagen-perfil:hover {
+    transform: rotate(8deg) scale(1.15);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.miembro-equipo h5 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.miembro-equipo p {
+    color: #a0a0a0;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.enlaces-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.enlaces-sociales a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.enlaces-sociales a:hover {
+    transform: translateY(-8px) scale(1.1);
+    background: #00C9FF;
+    box-shadow: 0 10px 20px rgba(0,201,255,0.4);
+}
+
+.enlaces-sociales a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 30;
+}
+
+/* Estilos para preguntas frecuentes */
+.faq-title {
+    font-size: 3rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 15px rgba(0, 123, 255, 0.7), 0 0 30px rgba(0, 123, 255, 0.5), 0 0 45px rgba(0, 123, 255, 0.3);
+    font-family: 'Salsa', cursive;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 15px rgba(0, 123, 255, 0.7), 0 0 30px rgba(0, 123, 255, 0.5), 0 0 45px rgba(0, 123, 255, 0.3);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 123, 255, 0.9), 0 0 40px rgba(0, 123, 255, 0.7), 0 0 60px rgba(0, 123, 255, 0.5);
+    }
+}
+
+.faq-section {
+    background: #2c2c2c;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.faq-icon {
+    color: #08e7b7;
+    font-size: 3rem; 
+    margin-left: auto;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: text-shadow 0.3s ease;
+    position: absolute;
+    right: 1rem; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    pointer-events: none; 
+}
+
+.faq-icon:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.faq-section {
+    position: relative; 
+    padding-right: 4rem; 
+    background: #2c2c2c;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.faq-text {
+    display: none;
+    color: #d0d0d0;
+    margin-top: 1rem;
+}
+
+.faq-section h2 {
+    color: #00bfff;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: left;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.faq-section p {
+    display: none;
+    color: #d0d0d0;
+    margin: 0.5rem 0 0 1rem;
+    width: calc(100% - 1rem);
+}
+
+/* Estilos futuristas para el formulario */
+.ods-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.ods-title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 15px rgba(0, 195, 255, 0.5);
+    font-family: 'Salsa', cursive;
+}
+
+.ods-form-container {
+    display: flex;
+    gap: 3rem;
+    position: relative;
+}
+
+.ods-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ods-form-left,
+.ods-form-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.ods-form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.ods-form-group label {
+    display: block;
+    color: #00c3ff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px rgba(0, 195, 255, 0.3);
+}
+
+.ods-form-group input,
+.ods-form-group select,
+.ods-form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 195, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.ods-form-group select option {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.ods-form-group select option[value="CE"],
+.ods-form-group select option[value="DNI"] {
+    color: #fff;
+}
+
+.ods-form-group input:focus
+.ods-form-group select:focus,
+.ods-form-group textarea:focus {
+    outline: none;
+    border-color: #00c3ff;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.ods-gender-group {
+    color: #00c3ff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    user-select: none;
+}
+
+.ods-gender-group input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ods-gender-group input[type="radio"] + span {
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease;
+    display: inline-block !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+}
+
+.ods-gender-group input[type="radio"]:checked + span {
+    color: #00c3ff;
+    text-shadow: 0 0 5px rgba(0, 195, 255, 0.3);
+    display: inline-block !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+}
+
+.ods-error {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.ods-submit-btn {
+    width: 80%;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #00c3ff, #0066ff);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.ods-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 195, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .ods-form-container {
+        flex-direction: column;
+    }
+
+    .ods-form-left,
+    .ods-form-right {
+        width: 100%;
+    }
+
+    .ods-title {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Estilos para el botón de menú hamburguesa */
+.nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-toggle-btn ion-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .ods-container {
+        max-width: 90%;
+    }
+    
+    .equipo-contenedor {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .ods-form-container {
+        flex-direction: column;
+    }
+    
+    .ods-form-left, .ods-form-right {
+        width: 100%;
+    }
+    
+    .pregunta-seccion {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    
+    .pregunta-seccion:nth-child(even) {
+        flex-direction: column;
+    }
+    
+    .equipo-titulo {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ods-title {
+        font-size: 3rem;
+    }
+    
+    .equipo-subtitulo {
+        font-size: 1.8rem;
+    }
+    
+    .equipo-descripcion {
+        font-size: 1.2rem;
+    }
+    
+    .miembro-equipo {
+        flex: 0 1 100%;
+    }
+    
+    .pregunta-texto h2 {
+        font-size: 2.2rem;
+    }
+    
+    .nav-toggle-btn {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(26, 26, 46, 0.95);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .ods-container {
+        padding: 20px;
+    }
+    
+    .ods-title {
+        font-size: 2.5rem;
+    }
+    
+    .equipo-titulo {
+        font-size: 3rem;
+    }
+    
+    .equipo-subtitulo {
+        font-size: 1.5rem;
+    }
+    
+    .pregunta-texto h2 {
+        font-size: 1.8rem;
+    }
+    
+    .pregunta-texto p {
+        font-size: 1.1rem;
+    }
+    
+    .ods-form-group label {
+        font-size: 1.1rem;
+    }
+    
+    .ods-form-group input,
+    .ods-form-group select,
+    .ods-form-group textarea {
+        font-size: 1rem;
+    }
+    
+    .ods-submit-btn {
+        font-size: 1.2rem;
+    }
+    
+    .equipo-seccion {
+        padding: 4rem 1rem;
+    }
+    
+    .imagen-perfil {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .miembro-equipo h5 {
+        font-size: 1.8rem;
+    }
+    
+    .miembro-equipo p {
+        font-size: 1.1rem;
+    }
+    
+    .enlaces-sociales a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}

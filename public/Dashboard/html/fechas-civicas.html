@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas Cívicas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Dashboard/css/fechas-civicas.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Salud-Bienestar/image/Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#" data-aos="fade-down">Inicio</a>
+            <a href="/Dashboard.html" data-aos="fade-down" data-aos-delay="100">Salir</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1 data-aos="zoom-in">Fechas Cívicas</h1>
+    </div>
+
+    <section class="form-section">
+        <div class="form-container" data-aos="fade-up">
+            <form id="eventoForm" action="/Salud-Bienestar/php/eventos.php" method="POST" enctype="multipart/form-data">
+                <input type="text" id="titulo" name="titulo" placeholder="Título" required>
+                <input type="text" id="descripcion" name="descripcion" placeholder="Descripción">
+                <input type="date" id="fecha" name="fecha" required>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                <button type="submit">Agregar Evento</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="events-section">
+        <div id="eventos-container" data-aos="fade-up">
+            <!-- Eventos se agregarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="ods-info">
+            <h3>ODS 3: Salud y Bienestar</h3>
+            <p>Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
+            <p>Este objetivo busca asegurar la salud y el bienestar para todos, en cada etapa de la vida. Aborda todas las principales prioridades de salud y llama a mejorar la salud reproductiva, materna e infantil; poner fin a las enfermedades transmisibles; reducir las enfermedades no transmisibles y otros peligros para la salud; y garantizar el acceso universal a medicamentos y vacunas seguros, eficaces, asequibles y de calidad.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/Dashboard/js/fechas-civicas.js"></script>
+</body>
+</html>

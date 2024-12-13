@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salud-Bienestar</title>
+    <meta name="title" content="salud-Bienestar">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Salud-Bienestar/css/contacto.css">
+    <link rel="stylesheet" href="/Salud-Bienestar/css/ods.css">
+
+
+  <!-- 
+    - Imagenes para  le banner 
+  -->
+  <link rel="preload" as="image" href="./Salud-Bienestar/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./Salud-Bienestar/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./Salud-Bienestar/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Salud y Bienestar</p>
+  </div>
+
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+         Ods 3 salud y bienestar los objetivos
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Te brindamos todas las informacione</span>
+        </div>
+
+        <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+51 987654321</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="saludybienestar@ods.pe" class="topbar-item link">
+        <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">saludybienestar@ods.pe</span>
+        </a>
+
+    </div>
+    </div>
+
+    <header class="header" data-header>
+    <div class="container">
+
+        <a href="#" class="logo">
+        <img src="/Salud-Bienestar/image/Logo.png" width="50" height="50" alt="ods">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+            <img src="" width="160" height="50" alt="ods3">
+        </a>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+            <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+        <ul class="navbar-list">
+
+            <li class="navbar-item">
+            <a href="/Salud-Bienestar/html/principalods.html" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">INICIO</span>
+            </a>
+            </l>
+
+            <li class="navbar-item">
+            <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Sobre Nosotros</span>
+            </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="/Salud-Bienestar/html/SYBM.html" class="navbar-link hover-underline">
+                    <div class="separator"></div>
+    
+                    <span class="span">SYBM</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+            <a href="/Salud-Bienestar/html/galeriaods.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Galeria</span>
+            </a>
+            </li>
+
+            <li class="navbar-item">
+            <a href="/Salud-Bienestar/html/recursosods.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Recursos</span>
+            </a>
+            </li>
+
+
+            <li class="navbar-item">
+            <a href="/Salud-Bienestar/html/contactoods.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">CONTACTO</span>
+            </a>
+            </li>
+
+            <li class="navbar-item">
+            <a href="/Dashboard.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">SALIR</span>
+            </a>
+            </li>
+
+        </ul>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+    </header>
+
+
+
+    <main>
+    <article>
+
+        <!-- 
+        - #texto del banner
+        -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+            <ul class="hero-slider" data-hero-slider>
+                <li class="slider-item active" data-hero-slider-item>
+                <div class="slider-bg">
+                    <img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1880" height="950" alt="" class="img-cover">
+                </div>
+                <p class="label-2 section-subtitle slider-reveal">SALUD Y BIENESTAR</p>
+                <h1 class="display-1 hero-title slider-reveal">
+                    Por un mundo más saludable <br>
+                    y una vida plena para todos <br>
+                </h1>
+                <p class="body-2 hero-text slider-reveal">
+                    Te speramos
+                </p>
+                <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="btn btn-primary slider-reveal">
+                    <span class="text text-1">Ver Mas</span>
+    
+                    <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                </a>
+                </li>
+                <!-- imagen 2 -->
+                <li class="slider-item" data-hero-slider-item>
+                <div class="slider-bg">
+                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1880" height="950" alt="" class="img-cover">
+                </div>
+                <p class="label-2 section-subtitle slider-reveal">Sobre Nosotros</p>
+                <h1 class="display-1 hero-title slider-reveal">
+                    Garantizar una vida sana <br>
+                    y promover el bienestar
+                </h1>
+                <p class="body-2 hero-text slider-reveal">
+                    Te esperamos
+                </p>
+                <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="btn btn-primary slider-reveal">
+                    <span class="text text-1">Ver Mas</span>
+                    <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                </a>
+                </li>
+                <!-- imagen 3 -->
+                <li class="slider-item" data-hero-slider-item>
+                <div class="slider-bg">
+                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1880" height="950" alt="" class="img-cover">
+                </div>
+                <p class="label-2 section-subtitle slider-reveal">Galeria</p>
+                <h1 class="display-1 hero-title slider-reveal">
+                    Descubre cómo podemos <br>
+                    mejorar juntos la salud
+                </h1>
+                <p class="body-2 hero-text slider-reveal">
+                    Juntos por un futuro más saludable
+                </p>
+                <a href="/Salud-Bienestar/html/galeriaods.html" class="btn btn-primary slider-reveal">
+                    <span class="text text-1">Ver Mas</span>
+                    <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                </a>
+                </li>
+    
+                <!-- imagen 4 -->
+                <li class="slider-item" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1880" height="950" alt="" class="img-cover">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Recursos</p>
+        
+                    <h1 class="display-1 hero-title slider-reveal">
+                        Juntos por un mundo <br>
+                        más sostenible
+                    </h1>
+                    <p class="body-2 hero-text slider-reveal">
+                        Descubre recursos y herramientas para construir un futuro mejor.
+                    </p>
+                    <a href="/Salud-Bienestar/html/recursosods.html" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">Ver Mas</span>
+                        <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                    </a>
+                    </li>
+    
+                    <!-- imagen 5 -->
+                <li class="slider-item" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1880" height="950" alt="" class="img-cover">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Contacto</p>
+                    <h1 class="display-1 hero-title slider-reveal">
+                        Juntos construimos <br>
+                        un futuro saludable
+                    </h1>
+                    <p class="body-2 hero-text slider-reveal">
+                        Tu bienestar es nuestra prioridad, únete a esta noble causa.
+                    </p>
+                    <a href="#" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">Ver Menu</span>
+                        <span class="text text-2" aria-hidden="true">Ver Menu</span>
+                    </a>
+                    </li>
+            </ul>
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn></button>
+                <ion-icon name="chevron-back"></ion-icon>
+            </button>
+    
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+    
+            </section>
+
+        <!-- Sección de Información sobre los ODS -->
+    <section class="equipo-seccion">
+        <h3 class="equipo-titulo">Equipo de construcción</h3>
+        <h4 class="equipo-subtitulo">
+            Somos estudiantes. Estudiamos Análisis de Sistemas en el Instituto Superior Tecnológico Vallegrande, 
+            y desarrollamos esta página web como parte de nuestro compromiso con la ODS 3: Salud y Bienestar.
+        </h4>
+        <p class="equipo-descripcion">
+            Nuestro objetivo es mejorar la calidad de vida a través de la tecnología, 
+            fomentando el bienestar y el acceso a información para una vida más saludable. 
+            Todos tenemos entre 17 y 18 años y estamos en el 2do semestre de la carrera, 
+            comprometidos a aprender y aplicar nuestras habilidades para hacer una diferencia en nuestra comunidad.
+        </p>
+    </section>
+
+    <!-- Sección de miembros del equipo -->
+    <section class="equipo-miembros">
+        <div class="equipo-contenedor">
+            <div class="miembro-equipo">
+                <img src="/Salud-Bienestar/partners/karla.jpg" alt="Karla Magallanes" class="imagen-perfil">
+                <h5>Karla Anyelí Magallanes Vicente</h5>
+                <p>
+                    Estudiante de Análisis de Sistemas y entusiasta de la programación y el desarrollo web. 
+                    Su pasión por aprender nuevas tecnologías la impulsa a utilizar la tecnología como una herramienta 
+                    para transformar vidas y fomentar el bienestar en su comunidad. 
+                    Siempre busca superar sus límites y dejar una huella positiva en el mundo.
+                </p>
+                <div class="enlaces-sociales">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/karla.magallanes.vicente%40vallegrande.edu.pe">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a href="https://wa.me/904518286">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="miembro-equipo">
+                <img src="/Salud-Bienestar/partners/lucas.jpg" alt="Lucas Leyva" class="imagen-perfil">
+                <h5>Christopher Lucas Leyva Chumpitaz</h5>
+                <p>
+                    Un innovador en el corazón, apasionado por la tecnología y el diseño de software. 
+                    Su meta es crear soluciones que marquen la diferencia y se esfuerza constantemente 
+                    por perfeccionar sus habilidades. Con un fuerte deseo de contribuir a proyectos significativos, 
+                    es un verdadero catalizador de cambio.
+                </p>
+                <div class="enlaces-sociales">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/christopher.leyva.chumpitaz%40vallegrande.edu.pe">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a href="https://wa.me/983006266">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="miembro-equipo">
+                <img src="/Salud-Bienestar/partners/luis.jpg" alt="Luis Mencia" class="imagen-perfil">
+                <h5>Luis Fernando Mencia Chipa</h5>
+                <p>
+                    Apasionado desarrollador web que se dedica a crear aplicaciones útiles y accesibles para todos. 
+                    Con un enfoque colaborativo y un deseo de aprender de sus colegas, se convierte en un miembro valioso 
+                    del equipo. Con cada proyecto, busca no solo crecer profesionalmente, sino también inspirar a otros 
+                    a alcanzar su máximo potencial.
+                </p>
+                <div class="enlaces-sociales">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/luis.mencia%40vallegrande.edu.pe">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a href="https://wa.me/951146093">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección de contacto -->
+    <section class="ods-container">
+        <h2 class="ods-title"><i class="fas fa-envelope"></i> Formulario de Contacto</h2>
+        <div class="ods-form-container">
+            <form id="contactForm" action="/public/Salud-Bienestar/php/form.php" method="POST" class="ods-form">
+                <div class="ods-form-left">
+                    <div class="ods-form-group">
+                        <label for="nombres"><i class="fas fa-user"></i> Nombres</label>
+                        <input type="text" id="nombres" name="nombres" required placeholder="Ingresa tus nombres" onblur="validateField(this)">
+                        <span class="ods-error" id="error-nombres">Nombre inválido</span>
+                    </div>
+                    <div class="ods-form-group">
+                        <label for="apellidos"><i class="fas fa-user"></i> Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" required placeholder="Ingresa tus apellidos" onblur="validateField(this)">
+                        <span class="ods-error" id="error-apellidos">Apellido inválido</span>
+                    </div>
+                    <div class="ods-form-group">
+                        <label for="tipoDocumento"><i class="fas fa-id-card"></i> Tipo de Documento</label>
+                        <select id="tipoDocumento" name="tipoDocumento" required onchange="validateField(this)">
+                            <option value="" disabled selected>Selecciona un tipo</option>
+                            <option value="CE">CE</option>
+                            <option value="DNI">DNI</option>
+                        </select>
+                        <span class="ods-error" id="error-tipoDocumento">Selecciona un tipo de documento</span>
+                    </div>
+                    <div class="ods-form-group">
+                        <label for="numeroDocumento"><i class="fas fa-id-card"></i> Número de Documento</label>
+                        <input type="text" id="numeroDocumento" name="numeroDocumento" required placeholder="Ingresa tu número de documento" onblur="validateDocument()">
+                        <span class="ods-error" id="error-numeroDocumento">Número inválido</span>
+                    </div>
+                    <div class="ods-form-group ods-gender-group">
+                        <span><i class="fas fa-venus-mars"></i> Género</span>
+                        <label class="ods-inline-flex ods-items-center ods-mr-4">
+                            <input type="radio" name="genero" value="F" required>
+                            <span class="ods-ml-2">Femenino</span>
+                        </label>
+                        <label class="ods-inline-flex ods-items-center">
+                            <input type="radio" name="genero" value="M" required>
+                            <span class="ods-ml-2">Masculino</span>
+                        </label>
+                        <span class="ods-error" id="error-genero">Selecciona un género</span>
+                    </div>
+                </div>
+                <div class="ods-form-right">
+                    <div class="ods-form-group">
+                        <label for="edad"><i class="fas fa-calendar-alt"></i> Edad</label>
+                        <input type="number" id="edad" name="edad" min="18" max="100" required onblur="validateField(this)">
+                        <span class="ods-error" id="error-edad">Edad inválida</span>
+                    </div>
+                    <div class="ods-form-group">
+                        <label for="telefono"><i class="fas fa-phone"></i> Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa tu número de teléfono" onblur="validatePhone()">
+                        <span class="ods-error" id="error-telefono">Teléfono inválido</span>
+                    </div>
+                    <div class="ods-form-group">
+                        <label for="gmail"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+                        <input type="text" id="gmail" name="gmail" placeholder="Ingresa un correo valido" onblur="validateField(this)">
+                        <span class="ods-error" id="error-gmail">Gmail Invalido </span>
+                    </div>                
+                    <div class="ods-form-group">
+                        <label for="direccion"><i class="fas fa-map-marker-alt"></i> Dirección</label>
+                        <input type="text" id="direccion" name="direccion" required placeholder="Ingresa tu dirección" maxlength="90" onblur="validateField(this)">
+                        <span class="ods-error" id="error-direccion">La dirección no puede estar vacía</span>
+                    </div>
+                    <div class="ods-form-group">
+                        <label for="mensaje"><i class="fas fa-comment-dots"></i> Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje" maxlength="120" onblur="validateField(this)"></textarea>
+                        <span class="ods-error" id="error-mensaje">El mensaje no puede estar vacío</span>
+                    </div>
+                </div>
+                <button type="submit" class="ods-submit-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <h1 class="faq-title">PREGUNTAS FRECUENTES</h1>
+
+    <!-- Pregunta 1 -->
+    <section class="faq-section">
+        <div class="faq-text"></div>
+            <h2>¿Qué son los Objetivos de Desarrollo Sostenible (ODS)</h2>
+            <p>Los ODS son un conjunto de 17 objetivos globales establecidos por la Asamblea General de las Naciones Unidas para abordar los principales desafíos de desarrollo sostenible, incluyendo la pobreza, desigualdad, y el cambio climático. Cada uno de estos objetivos tiene metas específicas que se deben cumplir para mejorar la calidad de vida de las personas y proteger el planeta. La implementación de los ODS implica la colaboración de gobiernos, empresas, sociedad civil y ciudadanos para alcanzar un futuro sostenible.</p>
+        </div>
+        <div class="faq-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+    </section>
+
+    <!-- Pregunta 2 -->
+    <section class="faq-section">
+        <div class="faq-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-text"></div>
+            <h2>¿Qué es el ODS 03: Salud y Bienestar?</h2>
+            <p>El ODS 03 busca garantizar una vida sana y promover el bienestar para todos en todas las edades. Incluye metas como reducir la mortalidad materna, acabar con las epidemias de enfermedades transmisibles y asegurar la cobertura sanitaria universal. Además, este objetivo enfatiza la importancia de la salud mental, el acceso a servicios de salud de calidad y la promoción de hábitos saludables a través de la educación. La meta es lograr una salud integral que incluya tanto el bienestar físico como el mental y social.</p>
+        </div>
+    </section>
+
+    <!-- Pregunta 3 -->
+    <section class="faq-section">
+        <div class="faq-text"></div>
+            <h2>¿Cómo puedo contribuir al ODS 03?</h2>
+            <p>Todos podemos contribuir al ODS 03 promoviendo estilos de vida saludables, apoyando campañas de vacunación y educación sanitaria, y participando en iniciativas de salud comunitaria. Esto incluye adoptar una alimentación balanceada, realizar actividad física regularmente y cuidar de nuestra salud mental. Además, involucrarse en actividades de voluntariado que busquen mejorar la salud pública, como la organización de eventos de donación de sangre o talleres de educación en salud, son formas efectivas de hacer la diferencia en la comunidad. También se puede fomentar la creación de políticas locales que prioricen la salud y el bienestar, así como abogar por el acceso equitativo a servicios de salud para todos.</p>
+        </div>
+        <div class="faq-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+    </section>
+
+    <!-- Pregunta 4 -->
+    <section class="faq-section">
+        <div class="faq-text"></div>
+            <h2>¿Qué acciones se están tomando a nivel global para el ODS 03?</h2>
+            <p>A nivel global, se están implementando diversas acciones para alcanzar el ODS 03, como la mejora de los sistemas de salud, el aumento de la financiación para la investigación médica, y la promoción de políticas públicas que prioricen la salud y el bienestar. Organizaciones internacionales, gobiernos y ONG están colaborando para erradicar enfermedades, mejorar la nutrición y asegurar el acceso a servicios de salud de calidad para todos.</p>
+        </div>
+        <div class="faq-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+    </section>
+
+    <!-- Pregunta 5 -->
+    <section class="faq-section">
+        <div class="faq-text"></div>
+            <h2>¿Cómo afecta el cambio climático a la salud y el bienestar?</h2>
+            <p>El cambio climático tiene un impacto significativo en la salud y el bienestar, aumentando la incidencia de enfermedades respiratorias, cardiovasculares y transmitidas por vectores. Las olas de calor, la contaminación del aire y los desastres naturales también afectan la salud mental y física de las personas. Es crucial abordar el cambio climático para proteger la salud pública y promover un entorno saludable.</p>
+        </div>
+        <div class="faq-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+    </section>
+
+    <!-- Pregunta 6 -->
+    <section class="faq-section">
+        <div class="faq-text"></div>
+            <h2>¿Qué papel juegan las tecnologías digitales en la promoción de la salud y el bienestar?</h2>
+            <p>Las tecnologías digitales juegan un papel crucial en la promoción de la salud y el bienestar al facilitar el acceso a la información sanitaria, mejorar la gestión de los servicios de salud y permitir la telemedicina. Aplicaciones móviles, plataformas de salud en línea y dispositivos de monitoreo de salud ayudan a las personas a gestionar su salud de manera más efectiva y a recibir atención médica oportuna, especialmente en áreas remotas.</p>
+        </div>
+        <div class="faq-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+    </section>
+
+    <!-- Parte Ia-->
+    <div id="chat-bubble">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/robot.svg" alt="Chat">
+    </div>
+    <div id="chat-container">
+        <button id="clear-chat">Vaciar Chat</button>
+        <div id="chat-messages">
+            <div class="message bot">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/robot.svg" alt="Bot" class="avatar">
+                <div class="message-content">
+                    <p>¡Hola! Soy Tu mascota virtual. ¿En qué puedo asistirte hoy?</p>
+                </div>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="/Salud-Bienestar/js/IA-Chat-GPT/IA.css">
+    <script type="module" src="/Salud-Bienestar/js/IA-Chat-GPT/IA.js"></script>
+
+
+    </article>
+    </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9kDQC4xvRFRNHoomRsfwRWxrz8nge7gEPuP_bafbBwPyk02oDfvaluQDLP9HrxIc15w&usqp=CAU')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="/Salud-Bienestar/image/Logo.png" width="160" height="50" loading="lazy" alt="Salud y Bienestar">
+          </a>
+
+          <p class="body-4">
+            ODS 3: Garantizar una vida sana y promover el bienestar para todos en todas las edades.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Reciba Noticias Sobre ODS</p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Tu correo electrónico" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Suscríbete</span>
+
+              <span class="text text-2" aria-hidden="true">Suscríbete</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="/Salud-Bienestar/html/principalods.html" class="label-2 footer-link hover-underline">Inicio</a>
+          </li>
+
+          <li>
+            <a href="/Salud-Bienestar/html/sobreods.html" class="label-2 footer-link hover-underline">Sobre Nosotros</a>
+          </li>
+
+          <li>
+            <a href="/Salud-Bienestar/html/galeriaods.html" class="label-2 footer-link hover-underline">Galeria</a>
+          </li>
+
+          <li>
+            <a href="/Salud-Bienestar/html/recursosods.html" class="label-2 footer-link hover-underline">Recursos</a>
+          </li>
+
+          <li>
+            <a href="/Salud-Bienestar/html/contactoods.html" class="label-2 footer-link hover-underline">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Tik Tok</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="/Salud-Bienestar/js/ods.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/Salud-Bienestar/js/equipo.js"></script>
+  <script src="/Salud-Bienestar/js/contacto.js"></script>
+
+</body>
+
+</html>

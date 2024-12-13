@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía - Huella de Carbono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e0e0e0;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .btn-regresar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #69D0A3;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(105, 208, 163, 0.2);
+        }
+
+        .btn-regresar:hover {
+            transform: translateY(-2px);
+            background: #4CAF50;
+            box-shadow: 0 6px 15px rgba(105, 208, 163, 0.3);
+        }
+
+        .infografia-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .infografia-item {
+            background: rgba(45, 45, 45, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border: 1px solid rgba(105, 208, 163, 0.1);
+        }
+
+        .infografia-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .infografia-item i {
+            font-size: 3rem;
+            color: #69D0A3;
+            margin-bottom: 15px;
+        }
+
+        .infografia-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .infografia-item h3 {
+            color: #69D0A3;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .infografia-item p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .titulo-principal {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #69D0A3;
+            margin: 40px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <a href="/Salud-Bienestar/proyecto-ecologico/proyecto-ecologico.html" class="btn-regresar">
+        <i class="fas fa-arrow-left"></i> Regresar
+    </a>
+
+    <h1 class="titulo-principal">Reducción de la Huella de Carbono</h1>
+
+    <div class="infografia-container">
+        <div class="infografia-item">
+            <i class="fas fa-bicycle"></i>
+            <h3>Transporte Sostenible</h3>
+            <img src="https://images.unsplash.com/photo-1519583272095-6433daf26b6e" alt="Transporte Sostenible">
+            <p>Utiliza bicicleta, transporte público o comparte vehículo para reducir emisiones de CO2.</p>
+        </div>
+
+        <div class="infografia-item">
+            <i class="fas fa-solar-panel"></i>
+            <h3>Energía Renovable</h3>
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276" alt="Energía Solar">
+            <p>Implementa paneles solares y utiliza energías limpias en tu hogar o negocio.</p>
+        </div>
+
+        <div class="infografia-item">
+            <i class="fas fa-recycle"></i>
+            <h3>Gestión de Residuos</h3>
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b" alt="Reciclaje">
+            <p>Reduce, reutiliza y recicla para minimizar los residuos que generamos.</p>
+        </div>
+
+        <div class="infografia-item">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Eficiencia Energética</h3>
+            <img src="https://www.iberdrola.com/documents/20125/41122/eficiencia-energetica-746x419.jpg/23e5d4f4-77a4-8377-628f-eb14963cf89a?t=1703694136799" alt="Bombilla LED">
+            <p>Usa bombillas LED y electrodomésticos eficientes para ahorrar energía.</p>
+        </div>
+
+        <div class="infografia-item">
+            <i class="fas fa-seedling"></i>
+            <h3>Consumo Local</h3>
+            <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9" alt="Mercado Local">
+            <p>Compra productos locales y de temporada para reducir la huella de transporte.</p>
+        </div>
+
+        <div class="infografia-item">
+            <i class="fas fa-tree"></i>
+            <h3>Reforestación</h3>
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09" alt="Plantación de Árboles">
+            <p>Participa en proyectos de plantación de árboles para compensar emisiones.</p>
+        </div>
+    </div>
+</body>
+</html>

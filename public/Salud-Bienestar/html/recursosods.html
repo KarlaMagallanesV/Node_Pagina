@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salud-Bienestar</title>
+    <meta name="title" content="salud-Bienestar">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Salud-Bienestar/css/ods.css">
+    <link rel="stylesheet" href="/Salud-Bienestar/css/recursos.css">
+
+    <!-- Link de css de Entretenimiento y Juegos -->
+    <link rel="stylesheet" href="/Salud-Bienestar/seccion-juegos/assets/stylesheet/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Woodland&display=swap" rel="stylesheet">
+
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 
+    - Imagenes para  le banner 
+  -->
+    <link rel="preload" as="image" href="./Salud-Bienestar/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./Salud-Bienestar/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./Salud-Bienestar/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+    -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Salud y Bienestar</p>
+    </div>
+
+
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    Ods 3 salud y bienestar los objetivos
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Te brindamos todas las informacione</span>
+            </div>
+
+            <a href="tel:+11234567890" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">+51 987654321</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="saludybienestar@ods.pe" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">saludybienestar@ods.pe</span>
+            </a>
+
+        </div>
+    </div>
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="/Salud-Bienestar/image/Logo.png" width="50" height="50" alt="ods">
+            </a>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="" width="160" height="50" alt="ods3">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/principalods.html" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">INICIO</span>
+                        </a>
+                        </l>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Sobre Nosotros</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/SYBM.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+            
+                            <span class="span">SYBM</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/galeriaods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Galeria</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/recursosods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Recursos</span>
+                        </a>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <a href="/Salud-Bienestar/html/contactoods.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">CONTACTO</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/Dashboard.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">SALIR</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #texto del banner
+        -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+                <ul class="hero-slider" data-hero-slider>
+                    <li class="slider-item active" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">SALUD Y BIENESTAR</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Por un mundo más saludable <br>
+                            y una vida plena para todos <br>
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Te speramos
+                        </p>
+                        <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Mas</span>
+
+                            <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                        </a>
+                    </li>
+                    <!-- imagen 2 -->
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Sobre Nosotros</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Garantizar una vida sana <br>
+                            y promover el bienestar
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Te esperamos
+                        </p>
+                        <a href="/Salud-Bienestar/html/sobre-nosotrosods.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Mas</span>
+                            <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                        </a>
+                    </li>
+                    <!-- imagen 3 -->
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Galeria</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Descubre cómo podemos <br>
+                            mejorar juntos la salud
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Juntos por un futuro más saludable
+                        </p>
+                        <a href="/Salud-Bienestar/html/galeriaods.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Mas</span>
+                            <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                        </a>
+                    </li>
+
+                    <!-- imagen 4 -->
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Recursos</p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Juntos por un mundo <br>
+                            más sostenible
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Descubre recursos y herramientas para construir un futuro mejor.
+                        </p>
+                        <a href="/Salud-Bienestar/html/recursosods.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Mas</span>
+                            <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                        </a>
+                    </li>
+
+                    <!-- imagen 5 -->
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">Contacto</p>
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Juntos construimos <br>
+                            un futuro saludable
+                        </h1>
+                        <p class="body-2 hero-text slider-reveal">
+                            Tu bienestar es nuestra prioridad, únete a esta noble causa.
+                        </p>
+                        <a href="/Salud-Bienestar/html/contactoods.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Mas</span>
+                            <span class="text text-2" aria-hidden="true">Ver Mas</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn></button>
+                <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+            </section>
+
+            <!-- Secion de Informacion sobre los ods-->
+            <section class="section-main">
+                <div class="box-info">
+                    <h1>Promueve la salud y el bienestar con el ODS 3.</h1>
+                    <p>Descubre cómo puedes contribuir a mejorar la salud y el bienestar mediante acciones individuales,
+                        propuestas de proyectos y el uso de herramientas útiles. Cada paso cuenta para hacer un cambio
+                        positivo en el mundo.</p>
+                </div>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Salud y Bienestar" class="health-image">
+            </section>
+
+            <!-- Sección Acciones Individuales -->
+            <section class="section-acciones" id="acciones">
+                <h2>Acciones Individuales</h2>
+                <p>Proponemos acciones sencillas y prácticas que cualquier persona puede realizar en su día a día para
+                    contribuir.</p>
+                <ul>
+                    <li>Reduce el consumo de plásticos de un solo uso.</li>
+                    <li>Participa en campañas de reforestación.</li>
+                    <li>Adopta el uso de transporte público o bicicleta.</li>
+                </ul>
+            </section>
+
+            <!-- Sección Proyectos -->
+            <section class="section-proyectos" id="proyectos">
+                <h2>Proyectos que se pueden Proponer</h2>
+                <p>Ideas de proyectos para involucrar a estudiantes y jóvenes en la preservación del medio ambiente y
+                    sostenibilidad.</p>
+                <ul>
+                    <li>Organizar talleres de reciclaje en colegios.</li>
+                    <li>Crear huertos escolares.</li>
+                    <li>Concursos de ideas para reducir el desperdicio de alimentos.</li>
+                </ul>
+            </section>
+
+            <!-- Sección Recursos y Herramientas -->
+            <section class="section-recursos" id="recursos">
+                <h2>Recursos y Herramientas</h2>
+                <p>Infografías, pósters, guías, presentaciones, juegos interactivos y más, diseñados para facilitar el
+                    aprendizaje y la participación.</p>
+                <ul>
+                    <li><a href="/Salud-Bienestar/proyecto-ecologico/proyecto-ecologico.html">Guía para iniciar proyectos ecológicos.</a></li>
+                    <li><a href="/Salud-Bienestar/seccion-juegos/juego-del-ahorcado/principalJuego.html">Juego interactivo de concienciación ambiental.</a></li>
+                    <li><a href="/Salud-Bienestar/proyecto-ecologico/infografia/Infografía.html">Infografía sobre la reducción de la huella de carbono.</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Sección Entretenimiento y Juegos -->
+            <section class="proyectos" id="proyectos">
+                <h1 data-section="proyectos" data-value="title" data-aos="fade-up"> Entretenimiento y Juegos </h1>
+
+            <!-- Viajemos por el Mundo de las Palabras -->
+
+                <div class="cards_container--proyectos">
+                    <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="card_JuegoAhorcado">
+                            <video autoplay loop muted controls class="videoCard--proyectos">
+                                <source src="/Salud-Bienestar/seccion-juegos/assets/images/viajemos-por-el-mundo-de-las-palabras.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                        </div>
+
+                        <div class="container_textCard--proyectos">
+                            <h2 data-section="proyectos" data-value="title-proyecto1"> Viajemos por el Mundo de las
+                                Palabras </h2>
+                            <p data-section="proyectos" data-value="info-proyecto1">Un juego donde el usuario debe
+                                adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge
+                                de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se
+                                complete.</p>
+                        </div>
+
+                        <div class="container_btn--proyectos">
+                            <a href="/Salud-Bienestar/seccion-juegos/juego-del-ahorcado/principalJuego.html" target="_blank">
+                                <button class="btn_demo">
+                                    <img src="/Salud-Bienestar/seccion-juegos/assets/images/corazon-logo.png" alt="Demostración">
+                                    JUGAR
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+            <!-- Juego N° 2 -->
+                    
+                    <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="container_imgCard--proyectos">
+                            <video autoplay loop muted controls class="videoCard--proyectos">
+                                <source src="/Salud-Bienestar/seccion-juegos/assets/images/viajemos-por-el-mundo-de-las-palabras.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                        </div>
+
+                        <div class="container_textCard--proyectos">
+                            <h2 data-section="proyectos" data-value="title-proyecto1"> Reproductor de Musica </h2>
+                            <p data-section="proyectos" data-value="info-proyecto1">Un juego donde el usuario debe
+                                adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge
+                                de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se
+                                complete.</p>
+                        </div>
+
+                        <div class="container_btn--proyectos">
+                            <a href="/Salud-Bienestar/seccion-juegos/juego-del-ahorcado/principalJuego.html" target="_blank">
+                                <button class="btn_demo">
+                                    <img src="/Salud-Bienestar/seccion-juegos/assets/images/corazon-logo.png" alt="Demostración"> JUGAR
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+            <!-- Juego N°03 -->
+
+                    <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <video autoplay loop muted controls class="videoCard--proyectos">
+                                <source src="/Salud-Bienestar/seccion-juegos/assets/images/viajemos-por-el-mundo-de-las-palabras.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto3"> Juego N°03 </h2>
+                        <p data-section="proyectos" data-value="info-proyecto3"> Un juego donde el usuario debe
+                                adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge
+                                de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se
+                                complete</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                            <a href="/Salud-Bienestar/seccion-juegos/juego-del-ahorcado/principalJuego.html" target="_blank">
+                                <button class="btn_demo">
+                                    <img src="/Salud-Bienestar/seccion-juegos/assets/images/corazon-logo.png" alt="Demostración"> JUGAR
+                                </button>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Sección Voluntariado ODS 3 -->
+            <h2 class="voluntariado-ods-title">Voluntariado ODS 3</h2>
+            <br>
+            <!-- Swiper -->
+            <section class="voluntariado-ods">
+                <div class="swiper-container">
+                    <dsiv class="swiper-wrapper">
+
+                        <!-- Voluntariado Lima,Perú -->
+
+                        <div class="swiper-slide">
+                            <div class="content" data-content="one">
+                                <h1> Lima, Perú (Puente Piedra)</h1>
+                                <br>
+                                <p>
+                                    Psicoeducando con paciencia es un proyecto social que busca estimular cognitiva y
+                                    emocionalmente
+                                    a adultos mayores.🧓👵
+                                    <br>
+                                    Se realizara en un centro de adultos mayores en Puente piedra.
+                                </p>
+                            </div>
+                            <div class="background" data-item="one"></div>
+
+                            <!-- Menu Voluntariado Lima,Peru  -->
+
+                            <div class="footer-sec">
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div>
+                                        <p> Disponible hasta: </p>
+                                        <small> 31/12/24 </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-map"></i>
+                                    <div>
+                                        <p> Ubicación: </p>
+                                        <small> Campo de Marte - Jesús María </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <div>
+                                        <p> Horario </p>
+                                        <small> 2:00 pm - 5:00 pm </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Boton de mas Informacion -->
+                                <button class="btn"
+                                    onclick="window.open('https://proa.pe/ong/entreconductas-1/voluntariado-con-adultos-mayores', '_blank');">Más
+                                    Información</button>
+                            </div>
+                        </div>
+
+                        <!-- Voluntariado Seul,Corea -->
+
+                        <div class="swiper-slide">
+                            <div class="content" data-content="two">
+                                <h1> Seúl, Corea del Sur </h1>
+                                <br>
+                                <p>
+                                    <b> ¿Qué proyectos de voluntariado puedo realizar en Corea? </b>
+                                    <br>
+                                    La organización trabaja con una gran diversidad de proyectos y programas de ayuda
+                                    social que
+                                    benefician a la comunidad entera.
+
+                                    Se necesita ayuda de colaboradores voluntarios para ayudar en la preparación y
+                                    distribución de
+                                    alimentos en una Soup Kitchen y también en la venta de una revista que apoya con
+                                    fondos a las
+                                    personas sin hogar. 🥙
+                                </p>
+                            </div>
+                            <div class="background" data-item="two"></div>
+
+                            <!-- Menu Seul,Corea del Sur  -->
+
+                            <div class="footer-sec">
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div>
+                                        <p> Disponible hasta: </p>
+                                        <small> 31/11/24 </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-book"></i>
+                                    <div>
+                                        <p> Idioma: </p>
+                                        <small> Ingles o Coreano </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <div>
+                                        <p> Horario </p>
+                                        <small> 4 a 5 horas diarias </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Boton de mas Informacion -->
+                                <button class="btn"
+                                    onclick="window.open('https://voluntariosenelmundo.com/voluntariado/voluntariado-corea/', '_blank');">Más
+                                    Información</button>
+                            </div>
+                        </div>
+
+                        <!-- Voluntario Port Elizabeth,  Sudáfrica -->
+
+                        <div class="swiper-slide">
+                            <div class="content" data-content="three">
+                                <h1> Port Elizabeth, Sudáfrica </h1>
+                                <br>
+                                <p>
+                                    Sé parte de una experiencia que te cambiará la vida y te permitirá trabajar detrás
+                                    de escena en
+                                    una reserva de vida silvestre de clase mundial en Sudáfrica! 🦏
+                                    <br>
+                                    Como voluntario de la Reserva de Vida Silvestre de Sudáfrica, tendrá la oportunidad
+                                    de trabajar
+                                    entre bastidores en una reserva de vida silvestre de clase mundial. Además, obtendrá
+                                    una valiosa
+                                    formación en gestión de la conservación.. 🦁
+                                </p>
+                            </div>
+                            <div class="background" data-item="three"></div>
+
+                            <!-- Menu Port Elizabeth, Sudáfrica -->
+
+                            <div class="footer-sec">
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div>
+                                        <p> Disponible hasta: </p>
+                                        <small> 31/12/24 </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-book"></i>
+                                    <div>
+                                        <p> Idioma: </p>
+                                        <small> Ingles </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <div>
+                                        <p> Horario </p>
+                                        <small> Flexible </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Boton de mas Informacion -->
+                                <button class="btn"
+                                    onclick="window.open('https://www.volunteerworld.com/es/volunteer-program/wildlife-reserve-supporter-in-south-africa-sidbury', '_blank');">Más
+                                    Información</button>
+                            </div>
+                        </div>
+
+                        <!-- Voluntario Nepal, Asia del Sur -->
+
+                        <div class="swiper-slide">
+                            <div class="content" data-content="four">
+                                <h1> Nepal, Asia del Sur </h1>
+                                <br>
+                                <p>
+                                    <b>¿Qué proyectos de voluntariado puedo realizar en Nepal?</b>
+                                    <br>
+                                    La organización trabaja con una gran diversidad de proyectos y programas de ayuda
+                                    social que
+                                    benefician a la comunidad entera.
+                                    <br>
+                                    Se necesita ayuda de colaboradores voluntarios para ayudar en la preparación y
+                                    distribución de
+                                    alimentos en una Soup Kitchen y también en la venta de una revista que apoya con
+                                    fondos a las
+                                    personas sin hogar. 🥙
+                                </p>
+                            </div>
+                            <div class="background" data-item="four"></div>
+
+                            <!-- Menu Nepal, Asia del Sur -->
+                            <div class="footer-sec">
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div>
+                                        <p>Disponible hasta:</p>
+                                        <small>31/11/24</small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-book"></i>
+                                    <div>
+                                        <p> Idioma:</p>
+                                        <small> Ingles </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <div>
+                                        <p>Horario</p>
+                                        <small> 5 horas diarias</small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Botón de más Información -->
+                                <button class="btn"
+                                    onclick="window.open('https://voluntariosenelmundo.com/voluntariado/voluntariado-nepal-2/', '_blank');">Más
+                                    Información</button>
+                            </div>
+                        </div>
+
+                        <!-- Voluntario Lima, Perú (Los Olivos) -->
+
+
+                        <div class="swiper-slide">
+                            <div class="content" data-content="five">
+                                <h1> Lima, Perú (Los Olivos) </h1>
+                                <br>
+                                <p>
+                                    ¡Genial que estés interesado en el voluntariado para ayudar a animales en albergues!
+                                    La
+                                    participación en este tipo de actividades es una forma maravillosa de contribuir al
+                                    bienestar de los
+                                    animales y brindarles una oportunidad de tener una vida mejor.🐶🦴
+                                </p>
+                            </div>
+                            <div class="background" data-item="five"></div>
+
+                            <!-- Menu Lima, Peru (Los Olivos) -->
+                            <div class="footer-sec">
+                                <div class="feature">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div>
+                                        <p>Disponible hasta:</p>
+                                        <small>31/11/24</small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-map"></i>
+                                    <div>
+                                        <p> Ubicación:</p>
+                                        <small> Exteriores de la Municipalidad de Los Olivos </small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="feature">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <div>
+                                        <p>Horario</p>
+                                        <small> 4 horas diarias</small>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Botón de más Información -->
+                                <button class="btn"
+                                    onclick="window.open('https://proa.pe/ong/asociacion-kp-1/visita-al-albergue-super-patas-y-colas-4', '_blank');">Más
+                                    Información</button>
+                            </div>
+                        </div> <!-- contenedor .swiper-wrapper -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+
+            <!-- Parte Ia-->
+        <div id="chat-bubble">
+            <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/robot.svg" alt="Chat">
+        </div>
+        <div id="chat-container">
+            <button id="clear-chat">Vaciar Chat</button>
+            <div id="chat-messages">
+                <div class="message bot">
+                    <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/robot.svg" alt="Bot" class="avatar">
+                    <div class="message-content">
+                        <p>¡Hola! Soy Tu mascota virtual. ¿En qué puedo asistirte hoy?</p>
+                    </div>
+                </div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <script type="importmap">
+            {
+                "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+                }
+            }
+        </script>
+
+        <link rel="stylesheet" href="/Salud-Bienestar/js/IA-Chat-GPT/IA.css">
+        <script type="module" src="/Salud-Bienestar/js/IA-Chat-GPT/IA.js"></script>
+
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer section has-bg-image text-center"
+        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9kDQC4xvRFRNHoomRsfwRWxrz8nge7gEPuP_bafbBwPyk02oDfvaluQDLP9HrxIc15w&usqp=CAU')">
+        <div class="container">
+
+            <div class="footer-top grid-list">
+
+                <div class="footer-brand has-before has-after">
+
+                    <a href="#" class="logo">
+                        <img src="/Salud-Bienestar/image/Logo.png" width="160" height="50" loading="lazy"
+                            alt="Salud y Bienestar">
+                    </a>
+
+                    <p class="body-4">
+                        ODS 3: Garantizar una vida sana y promover el bienestar para todos en todas las edades.
+                    </p>
+
+                    <div class="wrapper">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                    </div>
+
+                    <p class="title-1">Reciba Noticias Sobre ODS</p>
+
+                    <form action="" class="input-wrapper">
+                        <div class="icon-wrapper">
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                            <input type="email" name="email_address" placeholder="Tu correo electrónico"
+                                autocomplete="off" class="input-field">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">
+                            <span class="text text-1">Suscríbete</span>
+
+                            <span class="text text-2" aria-hidden="true">Suscríbete</span>
+                        </button>
+                    </form>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/principalods.html" class="label-2 footer-link hover-underline">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/sobreods.html" class="label-2 footer-link hover-underline">Sobre
+                            Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/galeriaods.html" class="label-2 footer-link hover-underline">Galeria</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/recursosods.html" class="label-2 footer-link hover-underline">Recursos</a>
+                    </li>
+
+                    <li>
+                        <a href="/Salud-Bienestar/html/contactoods.html" class="label-2 footer-link hover-underline">Contacto</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Tik Tok</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/Salud-Bienestar/js/ods.js"></script>
+    <script src="/Salud-Bienestar/js/recursos.js"></script>
+
+    <!-- Script de Entretenimiento y Juegos -->
+    
+
+    <script src="/Salud-Bienestar/js/voluntariado.js"></script>
+
+</body>
+
+</html>
